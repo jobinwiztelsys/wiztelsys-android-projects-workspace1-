@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/gamebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="puzzle game" />
+
+    <Button
+        android:id="@+id/brightnessbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set brightness" />
+
+    <Button
+        android:id="@+id/mapbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view map" />
+
+</LinearLayout>

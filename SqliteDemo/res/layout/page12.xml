@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/enter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="37dp"
+        android:layout_y="35dp"
+        android:text="enter name" />
+
+    <EditText
+        android:id="@+id/searchidtxt"
+        android:layout_width="298dp"
+        android:layout_height="105dp"
+        android:layout_x="18dp"
+        android:layout_y="66dp"
+        android:ems="10"
+        android:hint="name and address for search id \n oldand new names for update. \n name for delete."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/searchbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="181dp"
+        android:text="search id" />
+
+    <Button
+        android:id="@+id/truncatetablebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="truncate"
+        android:layout_x="78dp"
+        android:layout_y="260dp"
+        android:text="truncate table" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="180dp"
+        android:onClick="update"
+        android:text="update" />
+
+    <Button
+        android:id="@+id/deletercrdbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="206dp"
+        android:layout_y="180dp"
+        android:onClick="deleterecord"
+        android:text="delete record" />
+
+</AbsoluteLayout>

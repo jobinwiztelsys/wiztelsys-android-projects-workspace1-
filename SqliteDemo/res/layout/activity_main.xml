@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/ addresstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/viewdtailbtn"
+        android:layout_below="@+id/usertxt"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ addresstxt"
+        android:layout_marginTop="22dp"
+        android:onClick="adduser"
+        android:text="submit" />
+
+    <Button
+        android:id="@+id/viewdtailbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submitbtn"
+        android:layout_alignBottom="@+id/submitbtn"
+        android:layout_alignParentRight="true"
+        android:onClick="viewDetails"
+        android:text="view details" />
+
+    <EditText
+        android:id="@+id/getaddresstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usertxt"
+        android:layout_below="@+id/submitbtn"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter name of person to get address" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/selectpersonbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getaddresstxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="searchAddress"
+        android:text="search an address" />
+
+    <Button
+        android:id="@+id/menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@+id/viewdtailbtn"
+        android:onClick="menuredirect"
+        android:text="menu2" />
+
+    <EditText
+        android:id="@+id/usertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ addresstxt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/usertxt"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ addresstxt"
+        android:layout_toLeftOf="@+id/selectpersonbtn"
+        android:text="address" />
+
+</RelativeLayout>

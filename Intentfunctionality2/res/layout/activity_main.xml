@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/intentMapBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:onClick="handleClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:text="Load google map" />
+
+    <Button
+        android:id="@+id/intentSendEmailBtn"
+        style="?android:attr/buttonStyleSmall"
+       android:onClick="handleClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/intentImageUploadBtn"
+        android:layout_below="@+id/intentSendimgSDCardBtn"
+        android:layout_marginTop="28dp"
+        android:text="Send an E Mail" />
+
+    <Button
+        android:id="@+id/intentImageUploadBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:onClick="handleClick"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intentPlayserviceBtn"
+        android:layout_below="@+id/intentPlayserviceBtn"
+        android:layout_marginTop="23dp"
+        android:text="Send an image" />
+
+    <Button
+        android:id="@+id/intentSendimgSDCardBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:onClick="handleClick"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intentSendEmailBtn"
+        android:layout_below="@+id/intentImageUploadBtn"
+        android:layout_marginTop="22dp"
+        android:text="send multiple images from sd card" />
+
+    <Button
+        android:id="@+id/intentPlayserviceBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:onClick="handleClick"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intentMapBtn"
+        android:layout_below="@+id/intentMapBtn"
+        android:layout_marginTop="24dp"
+        android:text="Launch Google play" />
+
+</RelativeLayout>
